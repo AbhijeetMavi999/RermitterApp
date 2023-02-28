@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: REMITTER-SERVICE
+
+# MySQL Configuration
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/remitter
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  # Eureka Client Configuration
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    hostname: localhost
