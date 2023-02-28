@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01" mdbCollapse>
+            <a class="navbar-brand mb-2 mb-lg-0" href="">Remitter Registration</a>
+            <a class="navbar-brand mb-2 mb-lg-0" href="">Beneficiary Registration</a>
+            <a class="navbar-brand mb-2 mb-lg-0" [routerLink]="['/fundtransfer']">Fund Transfer</a>
+            <a class="navbar-brand mb-2 mb-lg-0" href="">Reports</a>
+            <a class="navbar-brand me-auto mb-2 mb-lg-0" href="">Logout</a>
+
+            <form class="d-flex input-group w-auto">
+                <input type="search" class="form-control" placeholder="search" aria-label="Search" />
+                <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+                    Search
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>

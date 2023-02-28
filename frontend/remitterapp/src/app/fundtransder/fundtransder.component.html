@@ -1,0 +1,40 @@
+<div class="container">
+    <mat-card class="card">
+        <form [formGroup]="fundTransferForm" (ngSubmit)="fundTransfer()">
+            <img src="/assets/images/dollar.png" alt="image">
+
+            <div class="accountNumber">
+                <mat-form-field appearance="fill" [style.width.px]=320>
+                    <mat-label>Remitter account no</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+
+            <div class="beneficiaryAccount">
+                <mat-form-field appearance="fill" [style.width.px]=320>
+                    <mat-label>Beneficiary account no</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+
+            <div class="amount">
+                <mat-form-field appearance="fill" floatLabel="always" [style.width.px]=320>
+                    <mat-label>Amount</mat-label>
+                    <input matInput type="number" class="example-right-align" placeholder="0">
+                    <span matTextPrefix>$&nbsp;</span>
+                    <span matTextSuffix>.00</span>
+                </mat-form-field>
+            </div>
+
+            <div class="accountNumber">
+                <mat-form-field appearance="fill" [style.width.px]=320>
+                    <mat-label>Transaction Naration</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+
+            <button id="sendButton" mat-raised-button color="primary">Send</button>
+            <button id="resetButton" mat-raised-button color="warn">Reset</button>
+        </form>
+    </mat-card>
+</div>
